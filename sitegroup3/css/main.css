@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body>header{
+    display: flex;
+    justify-content: space-between;
+}
+
+body>header ul li{
+    display: inline-block;
+}
