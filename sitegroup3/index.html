@@ -13,19 +13,21 @@
     <header>
         <div>
             <i class="fab fa-facebook-square"></i>
-            <input type="text" placeholder="Search">
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
         </div>
         <nav>
             <ul>
                 <li><a href="#">Mehdi</a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Create</a></li>
-                <li><button><i class="fas fa-sort-down"></i></button></li>
+                <li><button onclick="alert('ok')"><i class="fas fa-sort-down"></i></button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <aside>
+        <aside class="leftSide">
             <div>
                 <img src="./img/profil2.jpg" alt="">
                 <h1>Mehdi Tmimi</h1>
@@ -45,11 +47,11 @@
             </div>
         </aside>
         <div>
-            <section>
+            <section >
                 <header>
                     Create Post
                 </header>
-                <div>
+                <div class="createPost">
                     <div>
                         <img src="/img/profil.jpg" alt="">
                         <input type="text" placeholder="What's on your mind, Mehdi?">
@@ -60,7 +62,7 @@
                     </ul>
                 </div>
             </section>
-            <section>
+            <section class="section2">
                 <header>
                     <div>
                         <img src="./img/profil.jpg" alt="">
@@ -75,8 +77,8 @@
                 </header>
                 <div>
                     <p>some art ^_^!</p>
-                    <img src="./img/photo.jpg" alt="">
-                    <div>
+                    <img class="imgPost" src="./img/photo.jpg" alt="">
+                    <div class="ratings">
                         <a href="#">10 likes</a>
                         <a href="#">18 dislikes</a>
                     </div>
@@ -89,7 +91,7 @@
         </div>
         <aside>
             <div>
-                <div>
+                <div class="pageBoard">
                     <h3>
                         Page Board
                     </h3>
@@ -97,7 +99,7 @@
                         <i class="fas fa-ellipsis-h"></i>
                     </button>
                 </div>
-                <div>
+                <div class="actions">
                     <ul>
                         <li><button>Views</button></li>
                         <li><button>Likes</button></li>
@@ -106,7 +108,7 @@
                     <p>822</p>
                 </div>
             </div>
-            <div>
+            <div class="langues">
                 <ul>
                     <li><a href="#">English (US)</a></li>
                     <li><a href="#">العربية</a></li>
@@ -117,7 +119,7 @@
                     <i class="fas fa-plus"></i>
                 </button>
             </div>
-            <div>
+            <div class="privacy">
                 <ul>
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Terms</a></li>

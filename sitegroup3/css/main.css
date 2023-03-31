@@ -1,13 +1,155 @@
+:root{
+    --leftPadding:100px;
+    --rightPadding:300px;
+}
 *{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
 }
+a{
+    color: inherit;
+}
+body>header, body>main{
+    padding-left: var(--leftPadding);
+    padding-right: var(--rightPadding);
+}
 body>header{
     display: flex;
     justify-content: space-between;
+    background-color: #4167b2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
 }
 
 body>header ul li{
+    display: inline-block;
+    margin-left:10px ;
+
+}
+body>header ul li::after{
+    content: "";
+    border-right: 1px solid #3a5c9f;
+    margin-left:10px ;
+}
+body>header ul li:last-child:after{
+    content: "";
+    border-right:0px;
+    
+}
+body>header button{
+    border: 0px;
+    background-color: unset;
+    position: relative;
+    bottom: 2px;
+}
+body>header>div{
+    flex:1;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+body>header>nav{
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 70%;
+    font-size: 0.55em;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 100%;
+    font-size: 1.2em;
+}
+.search::after{
+    content: "\f002";
+    font-family: "Font Awesome 5 free";
+    font-weight: 600;
+    right: 0px;
+    position: absolute;
+    right:5px;
+    color: rgb(142, 140, 140);
+    background-color: rgb(241, 236, 236);
+    padding: 4px 20px;
+}
+/* ------- main ------ */ 
+main{
+    display: flex;
+}
+main>aside:nth-child(1){
+    flex:2;
+}
+main>div{
+    flex:6;
+}
+main>aside:last-child{
+    flex:3;
+}
+
+.imgPost{
+    width: 100%;
+}
+/* ------- section gauche ------ */ 
+.leftSide>div{
+    display: flex;
+}
+.leftSide>div:last-child{
+    display: block;
+}
+.leftSide li{
+    display: block;
+}
+.createPost>div{
+    display: flex;
+}
+.createPost input{
+    flex: 1;
+}
+.createPost li{
+    display: inline-block;
+}
+.section2 header{
+    display: flex;
+    justify-content: space-between;
+   align-items: flex-start;
+}
+.section2 header>div{
+    display: flex;
+}
+
+.ratings, .section2 footer{
+    display: flex;
+    justify-content: space-between;
+}
+.pageBoard{
+    display: flex;
+    justify-content: space-between;
+}
+.actions li{
+    display: inline-block;
+}
+.actions p{
+    display: flex;
+    justify-content: center;
+}
+.langues{
+    display: flex;
+    align-items: center;
+}
+.langues ul{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.langues li{
+    display: block;
+}
+.privacy li{
     display: inline-block;
 }
